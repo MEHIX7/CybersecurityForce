@@ -1,0 +1,331 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.header {
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: calc(100% - 40px);
+    height: 80px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.header__logo img {
+    max-width: 55px;
+    border-radius: 50%;
+}
+
+.header__nav__menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav__menu__link {
+    margin-right: 40px;
+}
+
+.header__nav__menu__link:last-of-type {
+    margin: initial;
+}
+
+.header__nav__menu__link a {
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+}
+
+.header__nav__menu__link a:after {
+    content: '';
+    height: 2px;
+    background-color: #fff;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    transition: 0.2s all ease-in-out;
+}
+
+.header__nav__menu__link a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.header__burger {
+    display: none;
+}
+
+.header__nav__menu__link svg {
+    fill: white;
+    height: 1.15em;
+}
+
+#icon_compte{
+    padding: 3px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+#email_icon {
+    stroke: black;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.header__burger {
+    margin-right: 0.8em;
+}
+
+.header__burger svg {
+    stroke: #fff;
+    height: 1.8em;
+}
+
+.header__nav__close {
+    display: none;
+}
+
+.header__nav__menu__link__slogan p {
+    display: none;
+}
+
+.section__presentation {
+    width: 100%;
+    margin-top: 80px;
+    height: 700px;
+    background-color: #0c1315;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__presentation img {
+    width: 27em;
+    border-radius: 0.6em;
+    object-fit: cover;
+}
+
+.div__j {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div__j h1 {
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 0px;
+}
+
+.div__j h2 {
+    font-weight: lighter;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 0px;
+}
+
+.div__j a {
+    text-decoration: none;
+    border-radius: 1em;
+    background-color: #000046;
+    color: white;
+    font-size: 1em;
+    margin-top: 1em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 12px 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.div__j a:hover {
+    color: black;
+    margin-top: -10px;
+    transition: 0.15s all ease-in-out;
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media screen and (max-width: 960px) {
+
+    .header__burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header__nav {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        height: 100vh;
+        background-color: #30334b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        background: linear-gradient(to right, #0c1315, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .header__nav.open {
+        display: flex;
+        animation: transformMenu 300ms ease-in-out forwards;
+    }
+
+    @keyframes transformMenu {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: initial;
+        }
+    }
+
+    .header__nav__menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__nav__menu__link {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .header__nav__menu__link a {
+        display: flex;
+        align-items: center;
+        font-size: 1.8em;
+    }
+
+    .header__nav__menu__link svg {
+        fill: white;
+        height: 1em;
+    }
+
+    .header__nav__menu__link__slogan p {
+        position: relative;
+        display: block;
+        text-transform: uppercase;
+        color: #fff;
+        bottom: -4.5em;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #icon_compte{
+        padding: 2px;
+        border: 2px solid white;
+        margin: 0px 0px;
+    }
+    
+    #email_icon {
+        stroke: black;
+        padding: 1px;
+        margin: 0px 0px;
+        border-radius: 50%;
+    }
+
+    .header__nav__close  {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header__nav__close svg {
+        stroke: #fff;
+        height: 2.3em;
+        position: absolute;
+        top: 20px;
+        right: 2.2em;
+        
+    }
+
+    .overlay__menu__mobile {
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(17, 17, 16);
+        opacity: 0.8;
+        display: none;
+    }
+
+    .overlay__menu__mobile.open {
+        display: block;
+    }
+
+    .section__presentation {
+        width: 100%;
+        margin-top: 80px;
+        height: 650px;
+        background-color: #0c1315;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section__presentation img {
+        width: 21em;
+        border-radius: 0.5em;
+    }
+    
+    .div__j {
+        width: 85%;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div__j h2 , a {
+        text-align: left;
+        font-size: 1em;
+        font-family: 'Noto Sans', sans-serif;
+        line-height: 1.2em;
+        font-weight: lighter;
+        margin-bottom: 20px;
+    }
+
+    .div__j h1 {
+        margin-bottom: 10px;
+        text-align: left;
+        font-size: 1.5em;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .div__j a {
+        text-decoration: none;
+        border-radius: 1em;
+        background-color: #000046;
+        color: white;
+        font-size: 1.1em;
+        margin-top: 0.1em;
+        font-weight: bolder;
+        text-transform: uppercase;
+        padding: 12px 30px;
+        font-family: 'Montserrat', sans-serif;
+    }
+ }
