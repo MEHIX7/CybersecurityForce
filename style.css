@@ -416,8 +416,6 @@ body {
         display: block;
     }
 
-    /* //  section de  bienvenue // mobile phone */
-
     .section__presentation {
         width: 100%;
         margin-top: 80px;
@@ -473,54 +471,45 @@ body {
         font-family: 'Montserrat', sans-serif;
     }
 
-    /* //  section de  bienvenue // mobile phone */
+    .section__streaming {
+        width: 100%;
+        background: #000428;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(45deg, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(45deg, #004e92, #000428);
+        color: black;
+    }
 
+    .section__streaming__space {
+        width: 90%;
+        height: 88%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-    /* --------------------------------- */
+    .section__streaming__space img {
+        width: 20em;
+        border-radius: 2em;
+    }
 
-.section__streaming {
-    width: 100%;
-            background: #000428;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(45deg, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(45deg, #004e92, #000428); /* 
-    color: black;
-}
+    .section__streaming h3 {
+        padding: 0;
+        margin: 0;
+    }
 
-.section__streaming__space {
-    width: 90%;
-    height: 88%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .section__streaming__space ol {
+        list-style-position: inside;
+        border: 3.3px solid #ee0000;
+        margin: 0;
+        border-radius: 2em;
+        padding: 10px 3em;
+    }
 
-.section__streaming__space img {
-    width: 20em;
-    border-radius: 2em;
-}
-
-.section__streaming h3 {
-    padding: 0;
-    margin: 0;
-}
-
-.section__streaming__space ol {
-    list-style-position: inside;
-    border: 3.3px solid #ee0000;
-    margin: 0;
-    border-radius: 2em;
-    padding: 10px 3em;
-}
-
-.section__streaming__space__link a {
-    padding-left: 0.4em;
-    color: black;
-}
-
-
-/*--------------------------------*/
-
-    /* // main -> evenement sportif important: football // mobile phone */
+    .section__streaming__space__link a {
+        padding-left: 0.4em;
+        color: black;
+    }
+    
     .main_event {
         display: flex;
         justify-content: center;
@@ -553,6 +542,5 @@ body {
         border-left: 2px solid blue;
         padding-left: 1em;
     }
-    /* // main -> evenement sportif important: football // mobile phone */
 
  }
