@@ -109,6 +109,9 @@ body {
 .header__burger svg {
     stroke: #fff;
     height: 1.8em;
+    box-shadow: rebeccapurple 0px 4px 6px  0px ;
+    padding: 10px;
+    border-radius: 1em;
 }
 
 .header__nav__close {
@@ -185,6 +188,7 @@ body {
 
 .section__streaming__space {
     width: 90%;
+    color: white;
 }
 
 .section__streaming__space img {
@@ -202,6 +206,7 @@ body {
     list-style-position: inside;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 .section__streaming__space__link a {
@@ -490,6 +495,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        color: white;
     }
 
     .section__streaming__space img {
@@ -508,11 +514,12 @@ body {
         margin: 0;
         border-radius: 2em;
         padding: 10px 3em;
+        color: white;
     }
 
     .section__streaming__space__link a {
         padding-left: 0.4em;
-        color: black;
+        color: white;
     }
     
     .main_event {
