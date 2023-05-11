@@ -239,6 +239,7 @@ body {
 
 .main__event__space h1 {
     margin: 0;
+    text-shadow: 4px 4px 15px blue;
 }
 
 
@@ -273,6 +274,7 @@ body {
         padding: 0px;
         margin: 0px;
         font-family: 'Noto Sans', sans-serif;
+        text-shadow: 4px 4px 15px #89cd13;
     }
 
     .main_event {
