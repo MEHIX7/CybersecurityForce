@@ -28,7 +28,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: #272470; /* Couleur de la poignée */
   border-radius: 2em;
-  height: 15%;
+  height: 19%;
 }
 
 ::selection {
