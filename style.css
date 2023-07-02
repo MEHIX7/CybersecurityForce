@@ -244,10 +244,11 @@ body {
 
     .section__presentation {
         height: 768px;
-        background: #2980B9;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #211d3c, #0d07ba, #0eeff7);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #211d3c, #0d07ba, #0eeff7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+        background: #161E2F;  /* fallback for old browsers */
+        /*
+        background: -webkit-linear-gradient(to right, #211d3c, #0d07ba, #0eeff7);  /* Chrome 10-25, Safari 5.1-6 
+        background: linear-gradient(to right, #211d3c, #0d07ba, #0eeff7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+        */
     }
 
     .section__presentation__space {
